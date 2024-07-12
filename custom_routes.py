@@ -62,8 +62,8 @@ event_emitter = EventEmitter()
 api = None
 api_task = None
 
-cd_enable_log = os.environ.get('CD_ENABLE_LOG', 'false').lower() == 'true'
-cd_enable_run_log = os.environ.get('CD_ENABLE_RUN_LOG', 'false').lower() == 'true'
+cd_enable_log = False
+cd_enable_run_log = False
 bypass_upload = os.environ.get('CD_BYPASS_UPLOAD', 'false').lower() == 'true'
 
 logger.info(f"CD_BYPASS_UPLOAD {bypass_upload}")
